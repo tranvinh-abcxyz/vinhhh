@@ -1,0 +1,63 @@
+background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .buy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6);
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Dịch Vụ Game Uy Tín</span>
+        <h1>HACK FREE FIRE - <span class="highlight">TRẦN VINH</span></h1>
+
+        <div class="features">
+            <div class="feature-item">🔥 <b>Chất lượng:</b> Bản hack mượt mà, chống khóa nick an toàn CHẤT LƯỢNG CAO.</div>
+            <div class="feature-item">⭐ <b>Uy tín:</b> Giao dịch nhanh gọn, đảm bảo 100%.</div>
+            <div class="feature-item">💬 <b>Nhiệt tình:</b> Hỗ trợ cài đặt chi tiết A-Z từ Admin Vinh Gay.</div>
+        </div>
+
+        <!-- Khung chữ chạy từ từ -->
+        <div id="typing-container">
+            <span id="typed-text"></span><span class="cursor">&nbsp;</span>
+        </div>
+
+        <!-- Nút Mua Hàng -->
+        <a href="https://www.facebook.com/share/1HWagkGfdV/?mibextid=wwXIfr" target="_blank" class="buy-btn">
+            Ấn vào đây để mua nhé !
+        </a>
+    </div>
+
+    <script>
+        // Nội dung lời chào quảng cáo
+        const text = "Chào anh em! Mình là TRẦN VINH chuyên cung cấp các bản Hack Free Fire chất lượng cao, an toàn và cực kỳ uy tín.\nHỗ trợ nhiệt tình 24/7 cho anh em cài đặt dễ dàng!";
+        
+        let index = 0;
+        const speed = 50; // Tốc độ chạy chữ
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+
+</body>
+</html>
